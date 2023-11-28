@@ -11,6 +11,12 @@
 		2988754E2B161F4A0007BF2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988754D2B161F4A0007BF2A /* ContentView.swift */; };
 		298875502B161F4B0007BF2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2988754F2B161F4B0007BF2A /* Assets.xcassets */; };
 		298875532B161F4B0007BF2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298875522B161F4B0007BF2A /* Preview Assets.xcassets */; };
+		2988755E2B161FFB0007BF2A /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988755D2B161FFB0007BF2A /* BackgroundView.swift */; };
+		298875652B1626120007BF2A /* JuliettView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298875642B1626120007BF2A /* JuliettView.swift */; };
+		298875672B16267B0007BF2A /* ExitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298875662B16267B0007BF2A /* ExitButtonView.swift */; };
+		298875692B1626E20007BF2A /* InfoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298875682B1626E20007BF2A /* InfoButtonView.swift */; };
+		2988756B2B16278E0007BF2A /* GameTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988756A2B16278E0007BF2A /* GameTitleView.swift */; };
+		298875702B1634910007BF2A /* JuliettData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988756F2B1634910007BF2A /* JuliettData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		2988754D2B161F4A0007BF2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2988754F2B161F4B0007BF2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		298875522B161F4B0007BF2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2988755D2B161FFB0007BF2A /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		298875642B1626120007BF2A /* JuliettView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuliettView.swift; sourceTree = "<group>"; };
+		298875662B16267B0007BF2A /* ExitButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButtonView.swift; sourceTree = "<group>"; };
+		298875682B1626E20007BF2A /* InfoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButtonView.swift; sourceTree = "<group>"; };
+		2988756A2B16278E0007BF2A /* GameTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTitleView.swift; sourceTree = "<group>"; };
+		2988756F2B1634910007BF2A /* JuliettData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuliettData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		2988754A2B161F4A0007BF2A /* Vorsleker */ = {
 			isa = PBXGroup;
 			children = (
-				2988754B2B161F4A0007BF2A /* VorslekerApp.swift */,
-				2988754D2B161F4A0007BF2A /* ContentView.swift */,
+				2988755F2B1625BD0007BF2A /* Games */,
+				2988755C2B161FDE0007BF2A /* Components */,
+				2988755B2B161FA00007BF2A /* App */,
+				298875592B161F8B0007BF2A /* Core */,
 				2988754F2B161F4B0007BF2A /* Assets.xcassets */,
 				298875512B161F4B0007BF2A /* Preview Content */,
 			);
@@ -65,6 +79,66 @@
 				298875522B161F4B0007BF2A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		298875592B161F8B0007BF2A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2988755A2B161F950007BF2A /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2988755A2B161F950007BF2A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2988754D2B161F4A0007BF2A /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2988755B2B161FA00007BF2A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2988754B2B161F4A0007BF2A /* VorslekerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2988755C2B161FDE0007BF2A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2988755D2B161FFB0007BF2A /* BackgroundView.swift */,
+				298875662B16267B0007BF2A /* ExitButtonView.swift */,
+				298875682B1626E20007BF2A /* InfoButtonView.swift */,
+				2988756A2B16278E0007BF2A /* GameTitleView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2988755F2B1625BD0007BF2A /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				2988756C2B1629CD0007BF2A /* Data */,
+				298875612B1625C80007BF2A /* Views */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		298875612B1625C80007BF2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				298875642B1626120007BF2A /* JuliettView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2988756C2B1629CD0007BF2A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2988756F2B1634910007BF2A /* JuliettData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +211,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298875652B1626120007BF2A /* JuliettView.swift in Sources */,
+				2988755E2B161FFB0007BF2A /* BackgroundView.swift in Sources */,
+				298875672B16267B0007BF2A /* ExitButtonView.swift in Sources */,
 				2988754E2B161F4A0007BF2A /* ContentView.swift in Sources */,
+				298875692B1626E20007BF2A /* InfoButtonView.swift in Sources */,
+				2988756B2B16278E0007BF2A /* GameTitleView.swift in Sources */,
+				298875702B1634910007BF2A /* JuliettData.swift in Sources */,
 				2988754C2B161F4A0007BF2A /* VorslekerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,17 +349,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vorsleker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZPZCUBM5U9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vorsleker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +370,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariuselfman.Vorsleker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -298,17 +384,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vorsleker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZPZCUBM5U9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vorsleker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +405,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariuselfman.Vorsleker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
